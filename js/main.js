@@ -1,17 +1,8 @@
-/* ============================
-   Main JavaScript - Portafolio Karen
-   ============================ */
-
-// --- EmailJS Configuration (placeholders) ---
-// 1. Crea una cuenta gratis en https://www.emailjs.com/
-// 2. Conecta un servicio de correo (Gmail, Outlook, etc.)
-// 3. Crea una plantilla (Email Template)
-// 4. Reemplaza los valores de abajo con los tuyos:
 
 const EMAILJS_CONFIG = {
-  publicKey: 'TU_PUBLIC_KEY',        // Ej: "abc123def456"
-  serviceID: 'TU_SERVICE_ID',       // Ej: "service_abc123"
-  templateID: 'TU_TEMPLATE_ID',     // Ej: "template_abc123"
+  publicKey: 'm062kPwL_MQgVVeCi',        // Ej: "abc123def456"
+  serviceID: 'service_3s2ce1g',       // Ej: "service_abc123"
+  templateID: 'template_ggyznhe',     // Ej: "template_abc123"
 };
 
 document.addEventListener('DOMContentLoaded', () => {

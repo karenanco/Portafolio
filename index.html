@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portafolio profesional de Karen - Desarrolladora Full Stack Python Junior" />
-  <title>Karen | Full Stack Python Developer</title>
+  <title>Karen | Desarrolladora Full Stack Python Junior</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
         <li><a href="#about" class="hover:text-[#a37f9e] transition-colors">Sobre Mí</a></li>
         <li><a href="#skills" class="hover:text-[#a37f9e] transition-colors">Habilidades</a></li>
         <li><a href="#projects" class="hover:text-[#a37f9e] transition-colors">Proyectos</a></li>
-        <li><a href="#cv" class="hover:text-[#a37f9e] transition-colors">CV</a></li>
+        <li><a href="assets/docs/formato-curriculum-vitae.pdf" target="_blank" class="hover:text-[#a37f9e] transition-colors"><i class="fas fa-download text-xs mr-1"></i>CV</a></li>
         <li><a href="#contact" class="hover:text-[#a37f9e] transition-colors">Contacto</a></li>
       </ul>
       <button id="menu-toggle" class="md:hidden text-[#ddbcce] text-xl" aria-label="Abrir menú">
@@ -34,33 +34,43 @@
         <li><a href="#about" class="block hover:text-[#a37f9e] transition-colors">Sobre Mí</a></li>
         <li><a href="#skills" class="block hover:text-[#a37f9e] transition-colors">Habilidades</a></li>
         <li><a href="#projects" class="block hover:text-[#a37f9e] transition-colors">Proyectos</a></li>
-        <li><a href="#cv" class="block hover:text-[#a37f9e] transition-colors">CV</a></li>
+        <li><a href="assets/docs/formato-curriculum-vitae.pdf" target="_blank" class="block hover:text-[#a37f9e] transition-colors"><i class="fas fa-download text-xs mr-1"></i>CV</a></li>
         <li><a href="#contact" class="block hover:text-[#a37f9e] transition-colors">Contacto</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- ==================== HERO ==================== -->
-  <section id="hero" class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+  <section id="hero" class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden bg-gradient-to-b from-[#12092c] via-[#121449] to-[#12092c]">
     <div class="hero-glow"></div>
+    <div class="absolute inset-0 bg-gradient-to-tr from-[#594375]/10 via-transparent to-[#a37f9e]/5 pointer-events-none"></div>
     <div class="max-w-4xl mx-auto text-center relative z-10">
-      <p class="text-[#a37f9e] font-medium tracking-widest uppercase text-sm mb-4 animate-fade-in">Full Stack Python Developer</p>
       <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 animate-fade-in">
         Hola, soy <span class="text-[#ddbcce]">Karen</span>
       </h1>
       <p class="text-lg md:text-xl text-[#a37f9e]/80 max-w-2xl mx-auto mb-10 animate-fade-in delay-200">
-        Apasionada por crear aplicaciones web funcionales, limpias y con impacto.
-        Especializada en la construcción de software con Python y Django,
-        combinando rigor analítico con una estructura de código bien diseñada.
+        Desarrolladora Full Stack Python Junior, apasionada por crear aplicaciones web funcionales, limpias y con impacto.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-300">
         <a href="#projects" class="inline-block bg-[#594375] hover:bg-[#a37f9e] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg shadow-[#594375]/30">
           <i class="fas fa-code mr-2"></i>Ver Proyectos
         </a>
-        <a href="#contact" class="inline-block border-2 border-[#594375] text-[#ddbcce] hover:bg-[#594375]/20 font-semibold px-8 py-3 rounded-lg transition-all duration-300">
-          <i class="fas fa-envelope mr-2"></i>Contacto
+      </div>
+      <div class="flex justify-center gap-5 mt-6 mb-8 animate-fade-in delay-200">
+        <a href="https://www.linkedin.com/in/karen-%C3%B1anco-v%C3%A1squez-314035206/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+           class="w-11 h-11 rounded-full bg-[#594375]/20 hover:bg-[#594375] border border-[#594375]/40 hover:border-[#a37f9e] text-[#ddbcce] hover:text-white flex items-center justify-center text-lg transition-all duration-300">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/karenanco" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+           class="w-11 h-11 rounded-full bg-[#594375]/20 hover:bg-[#594375] border border-[#594375]/40 hover:border-[#a37f9e] text-[#ddbcce] hover:text-white flex items-center justify-center text-lg transition-all duration-300">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:k.nanco.vasquez@gmail.com" aria-label="Email"
+           class="w-11 h-11 rounded-full bg-[#594375]/20 hover:bg-[#594375] border border-[#594375]/40 hover:border-[#a37f9e] text-[#ddbcce] hover:text-white flex items-center justify-center text-lg transition-all duration-300">
+          <i class="fas fa-envelope"></i>
         </a>
       </div>
+      
     </div>
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
       <a href="#about" aria-label="Scroll down">
@@ -72,27 +82,24 @@
   <!-- ==================== ABOUT ==================== -->
   <section id="about" class="py-20 md:py-28 px-6">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Sobre Mí</h2>
-      <p class="text-[#a37f9e] text-center mb-16 max-w-xl mx-auto">
-        De las aulas al código — una transición impulsada por la pasión por aprender y construir.
-      </p>
-
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Sobre mí</h2>
       <div class="grid md:grid-cols-3 gap-10 items-start">
         <div class="md:col-span-1 flex justify-center md:justify-start">
-          <div class="photo-card w-64 h-80">
-            <div class="photo-placeholder">
-              <i class="fas fa-user-circle text-7xl text-[#a37f9e]/40"></i>
-              <p class="text-sm text-[#a37f9e]/50 mt-3">Tu foto aquí</p>
+          <div class="photo-card w-70 h-96">
+            <div class="photo-placeholder w-full h-full rounded-xl overflow-hidden shadow-lg bg-[#594375]/10 p-4 flex items-center justify-center">
+            <img 
+              src="Karen 1.jpg" 
+              alt="Foto de Karen" 
+              class="w-full h-full object-contain"
+            />
             </div>
           </div>
         </div>
 
         <div class="md:col-span-2 space-y-4 text-[#ddbcce]/80 leading-relaxed">
           <p>
-            ¡Hola! Soy Karen, Desarrolladora Full Stack Python Junior y profesora de
-            Lengua y Literatura. Completé mi formación en desarrollo de software con
-            100% de logro, obteniendo certificación en Django, desarrollo Front-End
-            y bases de datos relacionales.
+            Soy Karen Ñanco, Desarrolladora Junior y profesora de
+            Lengua y Literatura. Completé mi formación en desarrollo de software mediante el programa Talento Digital, obteniendo certificación Full Stack Python.
           </p>
           <p>
             Mi formación técnica abarca Python, Django, HTML, CSS, JavaScript,
@@ -102,9 +109,8 @@
           </p>
           <p>
             Tras mi experiencia en educación, desarrollé habilidades altamente
-            transferibles al ámbito tecnológico, como el pensamiento analítico, la
-            resolución de problemas, la planificación y gestión de proyectos, la
-            comunicación efectiva, el trabajo colaborativo y el aprendizaje continuo.
+            transferibles al ámbito tecnológico, como la resolución de problemas, la planificación y gestión de proyectos, 
+            la comunicación efectiva, el trabajo colaborativo y el aprendizaje continuo.
           </p>
           <p>
             Me entusiasma integrarme a un equipo de desarrollo donde pueda aportar
@@ -114,7 +120,7 @@
             desafíos que me permitan crecer profesionalmente.
           </p>
           <p>
-            Si buscas una desarrolladora comprometida, con ganas de aprender y
+            Si buscas una desarrolladora comprometida, con muchas ganas de aprender y
             aportar valor desde el primer día, ¡conversemos!
           </p>
         </div>
@@ -143,10 +149,6 @@
             <div class="skill-icon-card">
               <i class="fas fa-server text-2xl text-[#ddbcce]"></i>
               <span>Django</span>
-            </div>
-            <div class="skill-icon-card">
-              <i class="fas fa-plug text-2xl text-[#ddbcce]"></i>
-              <span>DRF</span>
             </div>
             <div class="skill-icon-card">
               <i class="fab fa-html5 text-2xl text-[#ddbcce]"></i>
@@ -191,10 +193,6 @@
             <div class="skill-icon-card">
               <i class="fas fa-brain text-2xl text-[#ddbcce]"></i>
               <span>Pensamiento Analítico</span>
-            </div>
-            <div class="skill-icon-card">
-              <i class="fas fa-chart-project text-2xl text-[#ddbcce]"></i>
-              <span>Gestión de Proyectos</span>
             </div>
             <div class="skill-icon-card">
               <i class="fas fa-puzzle-piece text-2xl text-[#ddbcce]"></i>
@@ -298,23 +296,6 @@
     </div>
   </section>
 
-  <!-- ==================== CV ==================== -->
-  <section id="cv" class="py-20 md:py-28 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <div class="bg-gradient-to-br from-[#121449] to-[#594375]/30 rounded-2xl p-10 md:p-14 border border-[#594375]/30">
-        <i class="fas fa-file-pdf text-5xl text-[#a37f9e] mb-6"></i>
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Quieres revisar mi perfil completo?</h2>
-        <p class="text-[#a37f9e] mb-8 max-w-lg mx-auto">
-          Descarga mi currículum en PDF para conocer mi experiencia, formación y habilidades en detalle.
-        </p>
-        <a href="assets/docs/CV_Karen_Developer.pdf" target="_blank" download
-           class="inline-flex items-center gap-3 bg-[#594375] hover:bg-[#a37f9e] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg shadow-[#594375]/30 text-lg">
-          <i class="fas fa-download"></i> Descargar CV en PDF
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- ==================== CONTACT ==================== -->
   <section id="contact" class="py-20 md:py-28 px-6 bg-[#121449]/40">
     <div class="max-w-4xl mx-auto">
@@ -355,21 +336,21 @@
             También puedes encontrarme en estas plataformas:
           </p>
           <div class="flex gap-5">
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+            <a href="https://www.linkedin.com/in/karen-%C3%B1anco-v%C3%A1squez-314035206/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
                class="social-icon bg-[#594375]/20 hover:bg-[#594375] text-[#ddbcce] hover:text-white transition-all duration-300 w-12 h-12 rounded-lg flex items-center justify-center text-xl">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+            <a href="https://github.com/karenanco" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
                class="social-icon bg-[#594375]/20 hover:bg-[#594375] text-[#ddbcce] hover:text-white transition-all duration-300 w-12 h-12 rounded-lg flex items-center justify-center text-xl">
               <i class="fab fa-github"></i>
             </a>
-            <a href="mailto:karen@email.com" aria-label="Email"
+            <a href="mailto:k.nanco.vasquez@gmail.com" aria-label="Email"
                class="social-icon bg-[#594375]/20 hover:bg-[#594375] text-[#ddbcce] hover:text-white transition-all duration-300 w-12 h-12 rounded-lg flex items-center justify-center text-xl">
               <i class="fas fa-envelope"></i>
             </a>
           </div>
           <p class="text-sm text-[#a37f9e]/60 mt-4">
-            O escríbeme directamente a <a href="mailto:karen@email.com" class="text-[#a37f9e] hover:text-[#ddbcce] transition-colors">karen@email.com</a>
+            O escríbeme directamente a <a href="mailto:k.nanco.vasquez@gmail.com" class="text-[#a37f9e] hover:text-[#ddbcce] transition-colors">k.nanco.vasquez@gmail.com</a>
           </p>
         </div>
       </div>
