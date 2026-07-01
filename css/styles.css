@@ -1,0 +1,108 @@
+/* ============================
+   Custom Styles - Portafolio Karen
+   ============================ */
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+/* Hero glow effect */
+.hero-glow {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(89, 67, 117, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Skill badges */
+.skill-badge {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  background: rgba(89, 67, 117, 0.2);
+  border: 1px solid rgba(89, 67, 117, 0.4);
+  color: #ddbcce;
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  background: rgba(89, 67, 117, 0.4);
+  border-color: #a37f9e;
+  transform: translateY(-2px);
+}
+
+/* Project cards */
+.project-card {
+  background: #121449;
+  border: 1px solid rgba(89, 67, 117, 0.3);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: #594375;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(89, 67, 117, 0.25);
+}
+
+/* Project tags */
+.project-tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  background: rgba(163, 127, 158, 0.15);
+  color: #a37f9e;
+  border: 1px solid rgba(163, 127, 158, 0.25);
+}
+
+/* Social icons */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #12092c;
+}
+::-webkit-scrollbar-thumb {
+  background: #594375;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a37f9e;
+}
+
+/* Selection */
+::selection {
+  background: #594375;
+  color: #fff;
+}
+
+/* Smooth section transitions on scroll */
+section {
+  transition: opacity 0.6s ease;
+}
