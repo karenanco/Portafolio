@@ -8,11 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="bg-[#12092c] text-[#ddbcce] font-['Inter'] antialiased">
+<body class="bg-[#12092c] text-[#ddbcce] font-['Quicksand'] antialiased">
 
   <!-- ==================== NAVBAR ==================== -->
   <nav class="fixed top-0 w-full z-50 bg-[#12092c]/80 backdrop-blur-md border-b border-[#594375]/20">
@@ -20,6 +20,7 @@
       <a href="#" class="text-xl font-bold text-[#ddbcce] hover:text-[#a37f9e] transition-colors">Karen</a>
       <ul class="hidden md:flex gap-8 text-sm font-medium">
         <li><a href="#about" class="hover:text-[#a37f9e] transition-colors">Sobre Mí</a></li>
+        <li><a href="#skills" class="hover:text-[#a37f9e] transition-colors">Habilidades</a></li>
         <li><a href="#projects" class="hover:text-[#a37f9e] transition-colors">Proyectos</a></li>
         <li><a href="#cv" class="hover:text-[#a37f9e] transition-colors">CV</a></li>
         <li><a href="#contact" class="hover:text-[#a37f9e] transition-colors">Contacto</a></li>
@@ -31,6 +32,7 @@
     <div id="mobile-menu" class="hidden md:hidden bg-[#121449] border-t border-[#594375]/20">
       <ul class="flex flex-col gap-4 px-6 py-4 text-sm font-medium">
         <li><a href="#about" class="block hover:text-[#a37f9e] transition-colors">Sobre Mí</a></li>
+        <li><a href="#skills" class="block hover:text-[#a37f9e] transition-colors">Habilidades</a></li>
         <li><a href="#projects" class="block hover:text-[#a37f9e] transition-colors">Proyectos</a></li>
         <li><a href="#cv" class="block hover:text-[#a37f9e] transition-colors">CV</a></li>
         <li><a href="#contact" class="block hover:text-[#a37f9e] transition-colors">Contacto</a></li>
@@ -75,8 +77,17 @@
         De las aulas al código — una transición impulsada por la pasión por aprender y construir.
       </p>
 
-      <div class="grid md:grid-cols-5 gap-10 items-start">
-        <div class="md:col-span-3 space-y-4 text-[#ddbcce]/80 leading-relaxed">
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <div class="md:col-span-1 flex justify-center md:justify-start">
+          <div class="photo-card w-64 h-80">
+            <div class="photo-placeholder">
+              <i class="fas fa-user-circle text-7xl text-[#a37f9e]/40"></i>
+              <p class="text-sm text-[#a37f9e]/50 mt-3">Tu foto aquí</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-2 space-y-4 text-[#ddbcce]/80 leading-relaxed">
           <p>
             ¡Hola! Soy Karen, Desarrolladora Full Stack Python Junior y profesora de
             Lengua y Literatura. Completé mi formación en desarrollo de software con
@@ -107,37 +118,99 @@
             aportar valor desde el primer día, ¡conversemos!
           </p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="md:col-span-2 space-y-8">
-          <div>
-            <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
-              <i class="fas fa-code text-[#a37f9e]"></i> Hard Skills
-            </h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="skill-badge">Python</span>
-              <span class="skill-badge">Django</span>
-              <span class="skill-badge">DRF</span>
-              <span class="skill-badge">HTML5</span>
-              <span class="skill-badge">CSS3</span>
-              <span class="skill-badge">JavaScript</span>
-              <span class="skill-badge">PostgreSQL</span>
-              <span class="skill-badge">SQL</span>
-              <span class="skill-badge">Git</span>
-              <span class="skill-badge">Bootstrap</span>
-              <span class="skill-badge">OpenCode</span>
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="py-20 md:py-28 px-6 bg-[#121449]/40">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Habilidades</h2>
+      <p class="text-[#a37f9e] text-center mb-16 max-w-xl mx-auto">
+        Tecnologías que domino y habilidades que aportan valor más allá del código.
+      </p>
+
+      <div class="space-y-12">
+        <div>
+          <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+            <i class="fas fa-code text-[#a37f9e]"></i> Hard Skills
+          </h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div class="skill-icon-card">
+              <i class="fab fa-python text-2xl text-[#ddbcce]"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fas fa-server text-2xl text-[#ddbcce]"></i>
+              <span>Django</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fas fa-plug text-2xl text-[#ddbcce]"></i>
+              <span>DRF</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fab fa-html5 text-2xl text-[#ddbcce]"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fab fa-css3-alt text-2xl text-[#ddbcce]"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fab fa-js text-2xl text-[#ddbcce]"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fas fa-database text-2xl text-[#ddbcce]"></i>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fas fa-database text-2xl text-[#ddbcce]"></i>
+              <span>SQL</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fab fa-git-alt text-2xl text-[#ddbcce]"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fab fa-bootstrap text-2xl text-[#ddbcce]"></i>
+              <span>Bootstrap</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fas fa-wand-magic-sparkles text-2xl text-[#ddbcce]"></i>
+              <span>OpenCode</span>
             </div>
           </div>
-          <div>
-            <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
-              <i class="fas fa-brain text-[#a37f9e]"></i> Soft Skills
-            </h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="skill-badge">Pensamiento Analítico</span>
-              <span class="skill-badge">Gestión de Proyectos</span>
-              <span class="skill-badge">Resolución de Problemas</span>
-              <span class="skill-badge">Comunicación Efectiva</span>
-              <span class="skill-badge">Trabajo Colaborativo</span>
-              <span class="skill-badge">Aprendizaje Continuo</span>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+            <i class="fas fa-brain text-[#a37f9e]"></i> Soft Skills
+          </h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div class="skill-icon-card">
+              <i class="fas fa-brain text-2xl text-[#ddbcce]"></i>
+              <span>Pensamiento Analítico</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fas fa-chart-project text-2xl text-[#ddbcce]"></i>
+              <span>Gestión de Proyectos</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fas fa-puzzle-piece text-2xl text-[#ddbcce]"></i>
+              <span>Resolución de Problemas</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fas fa-comments text-2xl text-[#ddbcce]"></i>
+              <span>Comunicación Efectiva</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fas fa-users text-2xl text-[#ddbcce]"></i>
+              <span>Trabajo Colaborativo</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="fas fa-graduation-cap text-2xl text-[#ddbcce]"></i>
+              <span>Aprendizaje Continuo</span>
             </div>
           </div>
         </div>
